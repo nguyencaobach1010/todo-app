@@ -1,0 +1,29 @@
+CREATE DATABASE IF NOT EXISTS todoDB;
+USE todoDB;
+-- Create User table
+CREATE TABLE user (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL
+);
+
+-- Create Todo table
+CREATE TABLE todo (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    task VARCHAR(255) NOT NULL,
+    description TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    status ENUM('ACTIVE', 'INACTIVE'),
+    user_id INT,
+    FOREIGN KEY (user_id) REFERENCES user(id)
+);
+
+INSERT INTO user(username) VALUES ('quanghuy');
+INSERT INTO user(username) VALUES ('caobach');
+INSERT INTO user(username) VALUES ('tiendat');
+
+INSERT INTO todo(username) VALUES ('tiendat');
+
+INSERT INTO todo (task, description, created_at, status, user_id) VALUES ('Fix Bugs', 'Fix Bug API, Fix Bug Upload, Fix Bug Download', NOW(), 'ACTIVE', 3);
+INSERT INTO todo (task, description, created_at, status, user_id) VALUES ('Update UI/UX', 'Complete the quarterly report', NOW(), 'ACTIVE', 1);
+INSERT INTO todo (task, description, created_at, status, user_id) VALUES ('Mapping Entity', 'Schedule a call with the client', NOW(), 'INACTIVE', 2);
+INSERT INTO todo (task, description, created_at, status, user_id) VALUES ('DataBase', 'Add Data', NOW(), 'INACTIVE', 1);
