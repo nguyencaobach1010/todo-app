@@ -1,6 +1,6 @@
 package com.nguyencaobach.todoapp.payload.response;
 
-import com.nguyencaobach.todoapp.controller.dto.UserDTO;
+import com.nguyencaobach.todoapp.dto.UserDTO;
 import com.nguyencaobach.todoapp.entity.enums.Status;
 import lombok.AllArgsConstructor;
 import lombok.Data;

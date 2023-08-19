@@ -1,6 +1,6 @@
 package com.nguyencaobach.todoapp.service;
 
-import com.nguyencaobach.todoapp.controller.dto.UserDTO;
+import com.nguyencaobach.todoapp.dto.UserDTO;
 import com.nguyencaobach.todoapp.entity.TodoEntity;
 import com.nguyencaobach.todoapp.entity.UserEntity;
 import com.nguyencaobach.todoapp.exception.TaskCustomException;

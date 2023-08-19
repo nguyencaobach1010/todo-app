@@ -1,4 +1,4 @@
-package com.nguyencaobach.todoapp.controller.dto;
+package com.nguyencaobach.todoapp.dto;
 
 import com.nguyencaobach.todoapp.entity.enums.Status;
 import lombok.AllArgsConstructor;
