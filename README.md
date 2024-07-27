@@ -12,3 +12,4 @@ Do list item AND reading To Do list items belong to a specific user.
 1. Authentication and Authorization
 The goal is for us to gain an understanding on your logic, approach to solve a problem and
 the level of your skillset in Java and its eco-system related features and products
+2. Testing ting ting 
